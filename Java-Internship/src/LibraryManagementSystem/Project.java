@@ -1,6 +1,6 @@
 package LibraryManagementSystem;
 
-import java.util.List;
+
 import java.util.Scanner;
 
 public class Project {
@@ -47,14 +47,17 @@ class Library{
     Scanner sc= new Scanner(System.in);
     void add(){
         System.out.println("******************Library Management System***********************");
-        System.out.println("Enter book Name,Price and Book-no :");
+        System.out.println("Enter book Name : ");
         add_name = sc.nextLine();
         System.out.println("Enter Price of the Book : ");
         add_price = sc.nextFloat();
         System.out.println("Enter Book-Id");
         add_bookId= sc.nextInt();
 
-        System.out.println("Your details is "+add_name+" "+add_price+" "+add_bookId);
+        System.out.println("Your details is :");
+        System.out.println("Book Name : "+add_name);
+        System.out.println("Price of Book : "+add_price);
+        System.out.println("Book Id : "+add_bookId);
     }
 
     void issue(){
